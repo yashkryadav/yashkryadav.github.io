@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal Linking</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        nav { 
+            border-bottom: 1px solid #eaeaea; 
+            padding: 20px 0; 
+            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 100;
+        }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; margin: 0; }
+        nav a { color: #000; text-decoration: none; font-weight: 600; font-size: 18px; }
+        nav a:hover { text-decoration: underline; color: #e67e22; }
+        section { margin-top: 100px; padding-top: 20px; border-top: 2px solid #000; height: 120vh; }
+        h1 { color: #000; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Core Concept</a></li>
+        </ul>
+    </nav>
+    
+    <p>Scroll down or click the links above to navigate this document via internal anchors.</p>
+
+    <section id="section1">
+        <h1>Introduction</h1>
+        <p>You navigated here seamlessly using internal HTML anchor tags. This technique is vital for structuring long-form documents.</p>
+        <p>Keep scrolling down to see the sticky navigation bar in action. The top menu stays anchored to the top of the screen as you read through the content.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    
+    <section id="section2">
+        <h1>Core Concept</h1>
+        <p>This is the second section of the document. Notice how the URL now contains a <code>#section2</code> hash.</p>
+        <p>Because the navigation bar is sticky, you can easily click to jump back up to the Introduction from anywhere on the page.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+</body>
+</html>
